@@ -1,0 +1,8 @@
+file_format: "1"
+id: keycard
+name: Keycard
+type: shield
+url: https://github.com/Sam-Apostel/keycard/
+requires: [pro_micro]
+features:
+  - keys
