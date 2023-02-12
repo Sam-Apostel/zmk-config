@@ -1,19 +1,16 @@
-config ZMK_BLE
-	default y
-
-config ZMK_USB
-	default y
-
-config ZMK_SPLIT
-    default y
-
-
-if SHIELD_KEYCARD_DONGLE
+if SHIELD_KEYCARD_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Keycard"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
+config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+endif
+
+
+if SHIELD_KEYCARD_LEFT || SHIELD_KEYCARD_RIGHT
+    config ZMK_SPLIT
+        default y
 
 endif
