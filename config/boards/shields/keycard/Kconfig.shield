@@ -1,2 +1,8 @@
-config SHIELD_KEYCARD
-    def_bool $(shields_list_contains,keycard)
+config SHIELD_KEYCARD_LEFT
+	def_bool $(shields_list_contains,keycard_left)
+
+config SHIELD_KEYCARD_RIGHT
+	def_bool $(shields_list_contains,keycard_right)
+
+config SHIELD_KEYCARD_DONGLE
+    def_bool $(shields_list_contains,keycard_dongle)

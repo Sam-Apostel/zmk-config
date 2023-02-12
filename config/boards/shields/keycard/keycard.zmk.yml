@@ -6,3 +6,7 @@ url: https://github.com/Sam-Apostel/keycard/
 requires: [pro_micro]
 features:
   - keys
+siblings:
+  - keycard_left
+  - keycard_right
+  - keycard_dongle
